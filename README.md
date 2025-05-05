@@ -13,7 +13,7 @@ soybean-yield-prediction/
 │ ├── yield.csv # Annual soybean yields
 │ └── df_processed.csv # Final feature-engineered dataset
 │
-├── notebooks/ # Jupyter notebooks for EDA and model development
+├── notebooks/ # Jupyter notebooks for EDA and model development 
 │ ├── EDA_and_processing.ipynb # Data exploration and processing logic
 │ └── model.ipynb # Model experimentation and training logic
 │
