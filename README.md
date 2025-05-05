@@ -22,7 +22,8 @@ soybean-yield-prediction/
 │
 ├── scripts/ # Python scripts for reproducibility
 │ ├── data_processing.py # Script to generate df_processed.csv
-│ └── train_and_evaluate_model.py # Model training, evaluation, plotting
+│ ├── train_and_evaluate_model_linear.py # Model training using linear regression, evaluation, plotting
+│ └── train_and_evaluate_model_rf.py # Model training using random forest, evaluation, plotting
 │
 ├── requirements.txt
 ├── instruction.txt # Technical test instructions
@@ -37,20 +38,22 @@ soybean-yield-prediction/
 
 ## Methods
 
-- Feature engineering: Growing Degree Days, seasonal aggregates, etc.
+- Feature engineering: Aggregated daily temperature and precipitation data during the May–September growing season by state and year to compute averages, extremes, and counts of hot, dry, and flooding days, then merged the results with annual yield data.
 - Models tried:
   - Linear Regression
   - Random Forest Regressor
-  - XGBoost Regressor
-- Best model: **XGBoost** (lowest RMSE on 5-fold CV)
+- Best model: **Linear Regression**
 
 ## Results
 
-Final RMSE (cross-validation): `XX.X`
+Best metric on 5-fold CV:
+-Average MAE: 3.86
+-Average RMSE: 4.73
+-Average R²: 0.603
 
-Example plot: Predicted vs Actual Yields (2020)
+Predicted vs Actual Yields (Residuals Plot)
 
-![prediction_plot](outputs/figures/yield_predictions.png)
+![prediction_plot](outputs/figures/yield_predictions_linear.png)
 
 ## Usage
 
