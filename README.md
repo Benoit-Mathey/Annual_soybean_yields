@@ -40,7 +40,7 @@ soybean-yield-prediction/
 
 - Feature engineering: Aggregated daily temperature and precipitation data during the May–September growing season by state and year to compute averages, extremes, and counts of hot, dry, and flooding days, then merged the results with annual yield data.
 - Models tried:
-  - Linear Regression
+  - Linear Regression (with features normalization)
   - Random Forest Regressor
 - Best model: **Linear Regression**
 
@@ -62,5 +62,5 @@ To run the project:
 ```bash
 pip install -r requirements.txt
 python scripts/data_processing.py
-python scripts/train_and_evaluate_model.py
+python scripts/train_and_evaluate_model_rf.py   or   python scripts/train_and_evaluate_model_linear.py
 ```
