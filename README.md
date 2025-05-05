@@ -58,7 +58,10 @@ Best metric on 5-fold CV:
 
 To run the project:
 
+- clone the repo or unzip the compressed folder
+
 ```bash
+cd Annual_soybean_yields
 pip install -r requirements.txt
 python scripts/data_processing.py
 python scripts/train_and_evaluate_model_rf.py   or   python scripts/train_and_evaluate_model_linear.py
