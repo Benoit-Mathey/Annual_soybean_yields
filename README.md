@@ -47,11 +47,10 @@ soybean-yield-prediction/
 ## Results
 
 Best metric on 5-fold CV:
--Average MAE: 3.86
--Average RMSE: 4.73
--Average R²: 0.603
 
-Predicted vs Actual Yields (Residuals Plot)
+- Average MAE: 3.86
+- verage RMSE: 4.73
+- Average R²: 0.603
 
 ![prediction_plot](outputs/figures/yield_predictions_linear.png)
 
