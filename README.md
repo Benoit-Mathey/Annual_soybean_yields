@@ -4,9 +4,10 @@ This project predicts annual soybean yields at the US state level using climate 
 
 ## Folder structure
 
+```plaintext
 soybean-yield-prediction/
 │
-├── data/  
+├── data/
 │ ├── 2t.csv # Daily max temperature (K)
 │ ├── tp.csv # Daily total precipitation (mm)
 │ ├── yield.csv # Annual soybean yields
@@ -16,7 +17,7 @@ soybean-yield-prediction/
 │ ├── EDA_and_processing.ipynb # Data exploration and processing logic
 │ └── model.ipynb # Model experimentation and training logic
 │
-├── outputs/  
+├── outputs/
 │ └── figures/ # Contains plots like yield_predictions.png
 │
 ├── scripts/ # Python scripts for reproducibility
@@ -26,6 +27,7 @@ soybean-yield-prediction/
 ├── requirements.txt
 ├── instruction.txt # Technical test instructions
 └── README.md # Project overview and documentation
+```
 
 ## Dataset
 
