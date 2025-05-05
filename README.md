@@ -13,7 +13,7 @@ soybean-yield-prediction/
 │ ├── yield.csv # Annual soybean yields
 │ └── df_processed.csv # Final feature-engineered dataset
 │
-├── notebooks/ # Jupyter notebooks for EDA and model development 
+├── notebooks/ # Jupyter notebooks for EDA and model development
 │ ├── EDA_and_processing.ipynb # Data exploration and processing logic
 │ └── model.ipynb # Model experimentation and training logic
 │
@@ -42,14 +42,14 @@ soybean-yield-prediction/
 - Models tried:
   - Linear Regression (with features normalization)
   - Random Forest Regressor
-- Best model: **Linear Regression**
+- Best performing model: **Linear Regression**
 
 ## Results
 
 Best metric on 5-fold CV:
 
 - Average MAE: 3.86
-- verage RMSE: 4.73
+- Average RMSE: 4.73
 - Average R²: 0.603
 
 ![prediction_plot](outputs/figures/yield_predictions_linear.png)
